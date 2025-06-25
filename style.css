@@ -102,8 +102,10 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 10px;
     border-bottom: solid black 1px;
+    
 }
 
 .Categories a {
@@ -132,6 +134,7 @@ body {
     Top: 10%;
     left: 10%;
     border: solid black 2px;
+    flex-wrap: wrap;
 }
 
 .add {
