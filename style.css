@@ -1,0 +1,357 @@
+body {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid black 1px;
+    gap: 10px;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: 1;
+}
+
+.navbar__s1__title {
+    color: #A435F0;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.navbar__s2 {
+    padding: 10px;
+    border: solid black 1px;
+    border-radius: 30px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar__s2:focus-within {
+    border-color: blueviolet;
+}
+
+.navbar__s2 input {
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+.navbar__s2 input:focus {
+    outline: none;
+}
+
+.navbar__s3 {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.navbar__s3__title{
+    text-decoration: none;
+    padding: 8px;
+    color: black;
+}
+/*My Learning popup*/
+.mylearning{
+    position: relative;
+    cursor: pointer;
+}
+.mylearning__popup{
+    position: absolute;
+    background-color: white;
+    border: solid black 1px;
+    width: 100px;
+    top:150%;
+    padding: 20px;
+    right: 0;
+    display:none;
+}
+.mylearning:hover .mylearning__popup{
+    display: block;
+}
+
+:hover.navbar__s3__title{
+    background-color: #d8e2dc;
+    color: blueviolet;
+}
+.navbar__s3__icon{
+    padding: 3px;
+    border-radius: 5px;
+}
+:hover.navbar__s3__icon{
+    background-color: #d8e2dc;
+}
+
+.Categories {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: solid black 1px;
+}
+
+.Categories a {
+    background-color: violet;
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+.Categories a:hover{
+    background-color: #fcd3de;
+    color: #A435F0;
+}
+
+.sale-image img {
+    width: 100%;
+}
+.sale-image{
+    position: relative;
+}
+.sale-image__offer{
+    width: 35%;
+    padding: 15px;
+    background-color: white;
+    position: absolute;
+    Top: 10%;
+    left: 10%;
+    border: solid black 2px;
+}
+
+.add {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.add__s1 {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px;
+    border-radius: 20px;
+    margin: 30px;
+    width: 100%;
+}
+
+.Recommended h1 {
+    padding-bottom: 30px;
+}
+
+.Recommended h2 {
+    padding-bottom: 20px;
+}
+
+.Recommended {
+    padding: 20px;
+}
+
+.recommended__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+
+}
+
+.coures-card {
+    width: 250px;
+}
+
+.coures-card img {
+    height: 50%;
+    width: 100%;
+}
+
+.topics {
+    padding: 20px;
+}
+
+.topics__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+
+}
+
+.topics__container a {
+    text-decoration: none;
+    color: black;
+    border: solid gray 1px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-basis: 25%;
+}
+.topics__container a:hover{
+    background-color: #e8e8e4; 
+}
+
+.popular {
+    padding: 10px;
+}
+
+.popular__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.main-footer-one {
+    background-color: #2A2B3F;
+    color: white;
+
+}
+
+.footer__one {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-bottom: solid white 1px;
+}
+
+.footer__one__s1 p {
+    margin-top: 10px;
+}
+
+.footer__one__s2 button {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #2A2B3F;
+    color: white;
+}
+
+.footer__two {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-bottom: solid white 1px;
+
+}
+
+.footer__two__s1 a {
+    text-decoration: none;
+    color: #C0C4FC;
+}
+
+.footer__three{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.footer__three h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer__three__container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer__three__container h4{
+    margin-top: 20px;
+    margin-bottom: 20px;    
+}
+.footer__three__container p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.footer__four{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.footer__four__container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer__four__container h4{
+    margin-top: 20px;
+    margin-bottom: 20px;    
+}
+.footer__four__container p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.main-footer-two{
+    background-color: #202230;
+}
+.footer__five{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.footer__five__container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer__five__container h4{
+    margin-top: 20px;
+    margin-bottom: 20px;    
+}
+.footer__five__container p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.footer__six{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.footer__six a{
+    text-decoration: none;
+}
+
+
