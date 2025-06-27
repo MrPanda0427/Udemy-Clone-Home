@@ -203,8 +203,8 @@ body {
 }
 
 .coures-card {
-    width: 250px;
-    
+    width: 200px;
+    padding: 10px;
    
 }
 .coures-card:hover{
@@ -212,9 +212,10 @@ body {
 }
 
 .coures-card img {
-    width: 220px;
-    height: 120px;
+    width: 100%;
+    height: auto;
     border-radius: 10px;
+    border: solid red 1px;
 }
 
 
